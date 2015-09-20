@@ -126,6 +126,13 @@ class Math:
 
     # end reverse#
     #END UNIT CONVERSION
+    
+    def print_planck_units():
+    print "    
+    planck_length = math.sqrt((G * hbar) / c ** 3)
+    planck_mass = math.sqrt(hbar * c / G)
+    planck_energy = planck_mass * c ** 2
+    planck_time = math.sqrt(G * hbar / c ** 5"
 
     def magnification(self, fo, fe, to_string=False):
         #Telescope magnification
