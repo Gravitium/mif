@@ -126,13 +126,13 @@ class Math:
 
     # end reverse#
     #END UNIT CONVERSION
-    
-    def print_planck_units():
-    print "    
-    planck_length = math.sqrt((G * hbar) / c ** 3)
-    planck_mass = math.sqrt(hbar * c / G)
-    planck_energy = planck_mass * c ** 2
-    planck_time = math.sqrt(G * hbar / c ** 5"
+
+    def print_planck_units(self):
+        print """
+        planck_length = math.sqrt((G * hbar) / c ** 3)
+        planck_mass = math.sqrt(hbar * c / G)
+        planck_energy = planck_mass * c ** 2
+        planck_time = math.sqrt(G * hbar / c ** 5"""
 
     def magnification(self, fo, fe, to_string=False):
         #Telescope magnification
@@ -214,11 +214,78 @@ class Math:
             print "The cat is alive!"
         else:
             print "The cat is dead!"
-
-
-
-
-
-
+            
 a = Math()
+
+def understand():
+    print """
+ 1  frequency_to_momentum
+ 2  wavelength_to_momentum
+ 3  energy_to_momentum
+ 4  wavelength_to_energy
+ 5  energy_to_mass
+ 6  mass_to_energy
+ 7  log_standart_model
+ 8  quark_help
+ 9  orbital_period
+ 10  energy_to_wavelength
+ 11  mass_to_wavelength
+ 12  GeV_to_J
+ 13  Mev_to_J
+ 14  eV_to_J
+ 15  J_to_GeV
+ 16  J_to_MeV
+ 17  J_to_eV
+ 18  print_planck_units
+ 19  magnification
+ 20  particle_wavelength
+ 21  schwarzschild_radius
+ 22  BH_temperature
+ 23  r_momentum
+ 24  r_velocity
+ 25  cat
+    """
+    for i in range(20):
+        k = float(raw_input("Choose function >>> "))
+        if k == 1:
+           print a.frequency_to_momentum(float(raw_input("Frequency >>>")), bool(raw_input("To string >>>")))
+
+        elif k == 2:
+            print a.wavelength_to_momentum(float(raw_input("Wavelength >>>")), bool(raw_input("To string >>>")))
+
+        elif k == 3:
+            print a.energy_to_momentum(float(raw_input("Energy >>>")))
+
+        elif k == 4:
+            print a.wavelength_to_energy(float(raw_input("Wavelength >>>")), bool(raw_input("To string >>>")))
+
+        elif k == 5:
+            print a.energy_to_mass(float(raw_input("Energy >>>")))
+
+        elif k == 6:
+            print a.mass_to_energy(float(raw_input("Mass >>>")))
+
+        elif k == 7:
+            a.log_standart_model()
+
+        elif k == 8:
+            f = raw_input("Falvour >>> ")
+            a.quark_help(f)
+
+        elif k == 9:
+            m1 = float(raw_input("Mass 1 >>> "))
+            m2 = float(raw_input("mass 2 >>> "))
+            s = float(raw_input("Semi majour axis >>>"))
+            print(a.orbital_period(m1, m2, s))
+
+        elif k == 10:
+            pass
+
+
+understand()
+
+
+
+
+
 
