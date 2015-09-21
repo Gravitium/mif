@@ -31,8 +31,12 @@ class Math:
             p = self.h / wavelength
             return "The momentum of the foton is {} kg*m/s".format(p)
 
-    def energy_to_momentum(self, e):
-        return e / self.c
+    def energy_to_momentum(self, e, to_s=False):
+        if not to_s:
+            return e / self.c
+        else:
+            a = e / self.c
+            return "The momentum is {} J".format(a)
 
     def wavelength_to_energy(self, wavelength, to_string=False):
         if not to_string:
