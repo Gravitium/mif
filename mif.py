@@ -283,7 +283,34 @@ def understand():
             print(a.orbital_period(m1, m2, s))
 
         elif k == 10:
-            pass
+            print(a.energy_to_wavelength(float(raw_input("energy >>>"))))
+            
+        elif k == 11:
+            print(a.mass_to_wavelength(float(raw_input("mass >>>"))))
+        
+        elif k == 12:
+            print(a.GeV_to_J(float(raw_input("GeV >>> "))))
+        
+        elif k == 13:
+            print(a.MeV_to_J(float(raw_input("MeV >>> "))))
+            
+        elif k == 14:
+            print(a.eV_to_J(float(raw_input("eV >>> "))))
+        
+        elif k == 15:
+            print(a.J_to_GeV(float(raw_input("J >>>"))))
+        
+        elif k == 16:
+            print(a.J_to_MeV(float(raw_input("J >>>"))))
+        
+        elif k == 17:
+            print(a.J_to_eV(float(raw_input("J >>>"))))
+        
+        elif k== 18:
+            a.print_planck_units()
+        
+        elif k == 19:
+            print(a.magnification(float(raw_input(">>> ")), float(raw_input(">>> ")), bool(raw_input(">>> "))))
 
 
 understand()
