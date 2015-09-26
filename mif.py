@@ -311,6 +311,12 @@ def understand():
         
         elif k == 19:
             print(a.magnification(float(raw_input(">>> ")), float(raw_input(">>> ")), bool(raw_input(">>> "))))
+            
+        elif k == 20:
+            print(a.particle_wavelength(float(raw_input("mass >>>"))), float(raw_input("kinetic >>>")), bool(raw_input("To string >>>")))
+
+        elif k == 21:
+            print a.schwarzschild_radius(float(raw_input("mass >>>")), bool(raw_input("solar >>>")), bool(raw_input("to string >>>")), bool(raw_input("area >>>")))
 
 
 understand()
