@@ -1,5 +1,11 @@
+"""
+by Gravitium, 2015
+version alpha
+class math + function understand
+"""
+
 import math
-import random
+
 
 
 class Math:
@@ -210,6 +216,7 @@ class Math:
             return "The relativistic velocity is {}".format(x)
 
     def cat(self):
+        import random
         print "at the moment, the cat is dead and alive"
         for i in range(0, 3):
             print "..."
@@ -311,13 +318,15 @@ def understand():
         
         elif k == 19:
             print(a.magnification(float(raw_input(">>> ")), float(raw_input(">>> ")), bool(raw_input(">>> "))))
-            
+
         elif k == 20:
-            print(a.particle_wavelength(float(raw_input("mass >>>"))), float(raw_input("kinetic >>>")), bool(raw_input("To string >>>")))
+            print(a.particle_wavelength(float(raw_input("mass >>>"))), float(raw_input("kinetic >>>")), \
+             bool(raw_input("To string >>>")))
 
         elif k == 21:
-            print a.schwarzschild_radius(float(raw_input("mass >>>")), bool(raw_input("solar >>>")), bool(raw_input("to string >>>")), bool(raw_input("area >>>")))
-        
+            print a.schwarzschild_radius(float(raw_input("mass >>>")), bool(raw_input("solar >>>")), \
+             bool(raw_input("to string >>>")), bool(raw_input("area >>>")))
+
         elif k == 22:
             print a.BH_temperature(float(raw_input("Mass >>>")), bool(raw_input("to string >>> {True, False}")), \
              bool(raw_input("solar >>>{True, False}")), bool(raw_input("to celsius {true, false}")))
@@ -331,12 +340,4 @@ def understand():
         elif k == 25:
             a.cat()
 
-
 understand()
-
-
-
-
-
-
-
