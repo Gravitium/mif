@@ -317,6 +317,19 @@ def understand():
 
         elif k == 21:
             print a.schwarzschild_radius(float(raw_input("mass >>>")), bool(raw_input("solar >>>")), bool(raw_input("to string >>>")), bool(raw_input("area >>>")))
+        
+        elif k == 22:
+            print a.BH_temperature(float(raw_input("Mass >>>")), bool(raw_input("to string >>> {True, False}")), \
+             bool(raw_input("solar >>>{True, False}")), bool(raw_input("to celsius {true, false}")))
+
+        elif k == 23:
+            print a.r_momentum(float(raw_input("mass >>>")), float(raw_input("velocity >>>")), bool(raw_input("to_string >>>")))
+
+        elif k == 24:
+            print a.r_velocity(float(raw_input("r1>>>")), float(raw_input("v2 >>>")), bool(raw_input("to string")))
+
+        elif k == 25:
+            a.cat()
 
 
 understand()
